@@ -1,0 +1,22 @@
+<%= form_for(@post) do |f| %>
+  <fieldset>
+    <ol>
+      <li class="required">
+        <%= f.label :title %>
+        <%= f.text_field :title, autofocus: true %>
+      </li>
+      <li class="required">
+        <%= f.label :content %>
+        <%= f.text_area :content, cols: 40, rows: 7 %>
+      </li>
+      <li class="required">
+        <%= f.label :category %>
+        <%= f.text_field :category %>
+      </li>
+    </ol>
+    <p>
+      <%= f.submit %>
+      <%= link_to "Cancel", posts_path, class: 'button' %>
+    </p>
+  </fieldset>
+<% end %>
