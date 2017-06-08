@@ -1,0 +1,13 @@
+$primary-background-color: #FAEBD7; /* AntiqueWhite */
+$secondary-background-color: #7FFFD4; /* Aquamarine */
+$primary-text-color: #5F9EA0; /* CadetBlue */
+$secondary-text-color: #8A2BE2; /* BlueViolet */
+$primary-link-color: #6495ED; /* CornflowerBlue */
+$secondary-link-color: #FFF8DC; /* Cornsilk */
+$errors-background-color: #FFC;
+$errors-text-color: #DC3D3D;
+$subdued-color: darken($primary-background-color, 20%);
+$flash-notice-color: #DBFFDD;
+$flash-alert-color:  #FFE1DE;
+$accent-color: #FAFBFF;
+$fieldset-color: lighten($secondary-background-color, 50%);
