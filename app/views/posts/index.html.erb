@@ -1,11 +1,15 @@
 <h1><%= pluralize(@posts.size, "Post") %></h1>
 
-<% @posts.each do |post| %>
+<% @posts.order("created_at DESC").each do |post| %>
 	<article>
 
 		<header>
 			<h2><%= link_to(post.title, post_path(post.id)) %></h2>
 		</header>
+
+		<p>
+			<%= post.created_at %>
+		</p>
 
 		<p>
 			<%= truncate(post.content, length: 100, separator: " ") %>
